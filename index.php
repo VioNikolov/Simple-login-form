@@ -7,6 +7,15 @@
             <link href="./css/style.css" rel="stylesheet">
         </head>
         <body>
+            <nav>
+                <ul>
+                    <li><img src="images/logo.jpg"></li>
+                    <li><input type="email" placeholder="Email"></li>
+                    <li><input type="password" placeholder="Password"></li>
+                    <li><button type="submit">Sign in</button> </li>
+                </ul>
+            </nav>
+
             <div class="main">
                 <div class="container">
                     <h2>Sign up</h2>
@@ -38,7 +47,7 @@
                             </li>
                         </ul>
 
-                        <p>By clicking Sign Up, you agree to <span>User Agreemen</span>, <span>Privacy Policy</span>, and <span>Cookie Policy</span></p><br>
+                        <p>By clicking Sign Up, you agree to <span>User Agreement</span>, <span>Privacy Policy</span>, and <span>Cookie Policy</span></p><br>
                         <button id="signup" type="submit"><b>Sign Up</b></button>
                     </form>
                 </div>
