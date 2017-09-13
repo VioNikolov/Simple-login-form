@@ -119,7 +119,7 @@ p {
     color: #3b3b3b;font-weight: 700;
 }
 
-#signup {
+.container button {
     width: 350px;
     background-color: #f8d20f;
     border: 1px solid #e9af25;

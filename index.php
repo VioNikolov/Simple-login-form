@@ -12,7 +12,7 @@
                     <li><img src="images/logo.jpg"></li>
                     <li><input type="email" placeholder="Email"></li>
                     <li><input type="password" placeholder="Password"></li>
-                    <li><button type="submit">Sign in</button> </li>
+                    <li><button type="submit" name="singin">Sign in</button> </li>
                 </ul>
             </nav>
 
@@ -48,7 +48,7 @@
                         </ul>
 
                         <p>By clicking Sign Up, you agree to <span>User Agreement</span>, <span>Privacy Policy</span>, and <span>Cookie Policy</span></p><br>
-                        <button id="signup" type="submit"><b>Sign Up</b></button>
+                        <button name="signup" type="submit"><b>Sign Up</b></button>
                     </form>
                 </div>
             </div>
