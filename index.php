@@ -1,15 +1,3 @@
-<?php
-    require 'db.php';
-    session_start();
-    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        if(isset($_POST['signin'])) {
-            require 'signin.php';
-        }
-        elseif (isset($_POST['signup'])) {
-            require 'signup.php';
-        }
-    }
-?>
 <!doctype html>
     <html>
         <head>
@@ -19,25 +7,19 @@
             <link href="./css/style.css" rel="stylesheet">
         </head>
         <body>
-            <form method="post" action="">
-                <nav>
-                    <ul>
-                        <li><img src="images/logo.jpg"></li>
-                        <li><input type="email" placeholder="Email"></li>
-                        <li><input type="password" placeholder="Password"></li>
-                        <li><button type="submit" name="singin">Sign in</button> </li>
-                    </ul>
-                </nav>
-            </form>
+            <nav>
+                <ul>
+                    <li><img src="images/logo.jpg"></li>
+                    <li><input type="email" placeholder="Email"></li>
+                    <li><input type="password" placeholder="Password"></li>
+                    <li><button type="submit" name="singin">Sign in</button> </li>
+                </ul>
+            </nav>
 
             <div class="main">
-                <?php
-                echo $_SESSION['message'];
-                ?>
                 <div class="container">
                     <h2>Sign up</h2>
-
-                    <form method="post" action="">
+                    <form method="get" action="">
                         <ul>
                             <li>
                                 <label for="fname">First name</label>
@@ -68,7 +50,6 @@
                         <p>By clicking Sign Up, you agree to <span>User Agreement</span>, <span>Privacy Policy</span>, and <span>Cookie Policy</span></p><br>
                         <button name="signup" type="submit"><b>Sign Up</b></button>
                     </form>
-
                 </div>
             </div>
         </body>
