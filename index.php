@@ -23,16 +23,19 @@
                 <nav>
                     <ul>
                         <li><img src="images/logo.jpg"></li>
-                        <li><input type="email" placeholder="Email"></li>
-                        <li><input type="password" placeholder="Password"></li>
-                        <li><button type="submit" name="singin">Sign in</button> </li>
+                        <li><input name="email_nav" type="email" placeholder="Email"></li>
+                        <li><input name="pass_nav" type="password" placeholder="Password"></li>
+                        <li><button type="submit" name="signin">Sign in</button> </li>
                     </ul>
                 </nav>
             </form>
 
             <div class="main">
                 <?php
-                echo $_SESSION['message'];
+                if (isset($_SESSION['message'])) {
+                    echo $_SESSION['message'];
+                    unset($_SESSION['message']);
+                }
                 ?>
                 <div class="container">
                     <h2>Sign up</h2>
