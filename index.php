@@ -17,19 +17,20 @@
                 Simple login form
             </title>
             <link href="./css/style.css" rel="stylesheet">
+            <script
+                src="https://code.jquery.com/jquery-3.2.1.min.js"
+                integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+                crossorigin="anonymous">
+            </script>
+            <script src="js/validation.js"></script>
         </head>
         <body>
             <?php
                 require "navbar.php";
-            ?>
 
-
-
-
-                    <?php
                     if(isset($_SESSION['logged_in'])) {
                         if($_SESSION['logged_in'] == true) {
-                            echo '<h2>Welcome to your site <b>'.$_SESSION['first_name'].' '.$_SESSION['last_name'].'!</b></h2>';
+                            echo '<h2>Welcome to our site <b>'.$_SESSION['first_name'].' '.$_SESSION['last_name'].'!</b></h2>';
                         }
                     }
                     else {
@@ -75,9 +76,10 @@
                                 <li>
                                     <input id="pass" type="password" name="pass">
                                 </li>
+                                <p class="alert-warning" id="pass_length_check"></p>
                             </ul>
 
-                        <p>By clicking Sign Up, you agree to <span>User Agreement</span>, <span>Privacy Policy</span>, and <span>Cookie Policy</span></p><br>
+                        <p id="text-field">By clicking Sign Up, you agree to <span>User Agreement</span>, <span>Privacy Policy</span>, and <span>Cookie Policy</span></p><br>
                         <button class="button" name="signup" type="submit"><b>Sign Up</b></button>
                     </form>';
                     }

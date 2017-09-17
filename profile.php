@@ -9,7 +9,7 @@ if($_SESSION['logged_in'] != true){
 <html>
 <head>
     <title>
-        Simple login form
+        Profile
     </title>
     <link href="./css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,7 +21,6 @@ if($_SESSION['logged_in'] != true){
     <script src="js/ajax.js"></script>
 </head>
 <body>
-<!--TODO: TO MAKE NAV INCLUDE -->
     <?php
         require "navbar.php";
     ?>
