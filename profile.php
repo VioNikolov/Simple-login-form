@@ -9,6 +9,7 @@ require 'db.php';
         Simple login form
     </title>
     <link href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script
         src="https://code.jquery.com/jquery-3.2.1.min.js"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -33,13 +34,14 @@ require 'db.php';
     ?>
     <div class="main-table">
         <div class="container-table">
-            <table>
+            <table cellspacing="0" cellpadding="0">
                 <thead>
                     <tr>
                         <th>id</th>
                         <th>first name</th>
                         <th>last name</th>
                         <th>email</th>
+                        <th>action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -54,7 +56,7 @@ require 'db.php';
                                    <td>".$row['first_name']."</td>
                                    <td>".$row['last_name']."</td>
                                    <td>".$row['email']."</td>
-                                   <td><button class='delete' id='".$row['id']."'>delete</button></td>
+                                   <td><button class='delete' id='".$row['id']."'><i class='fa fa-trash'></i></button></td>
                                </tr>";
                         }
                     ?>
