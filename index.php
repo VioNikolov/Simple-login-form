@@ -31,7 +31,14 @@
                 }
                 ?>
                 <div class="container">
-                    <h2>Sign up</h2>
+                    <?php
+                    if(isset($_SESSION['logged_in'])) {
+                        if($_SESSION['logged_in'] == true) {
+                            echo '<h2>Welcome to your site '.$_SESSION['first_name'].' '.$_SESSION['last_name'].'!</h2>';
+                        }
+                    }
+                    else {
+                        echo '<h2>Sign up</h2>
 
                     <form method="post" action="">
                         <ul>
@@ -63,7 +70,10 @@
 
                         <p>By clicking Sign Up, you agree to <span>User Agreement</span>, <span>Privacy Policy</span>, and <span>Cookie Policy</span></p><br>
                         <button class="button" name="signup" type="submit"><b>Sign Up</b></button>
-                    </form>
+                    </form>';
+                    }
+                    ?>
+
 
                 </div>
             </div>

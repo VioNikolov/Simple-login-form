@@ -1,6 +1,9 @@
 <?php
 session_start();
 require 'db.php';
+if($_SESSION['logged_in'] != true){
+    header("location: index.php");
+}
 ?>
 <!doctype html>
 <html>
@@ -46,7 +49,7 @@ require 'db.php';
                                    <td>".$row['first_name']."</td>
                                    <td>".$row['last_name']."</td>
                                    <td>".$row['email']."</td>
-                                   <td><button class='delete' id='".$row['id']."'><i class='fa fa-trash'></i></button></td>
+                                   <td><button title='Careful, this action is irreversible!' class='delete' id='".$row['id']."'><i class='fa fa-trash'></i></button></td>
                                </tr>";
                     }
                     ?>

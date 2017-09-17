@@ -1,4 +1,4 @@
-window.onload = function () {
+$(document).ready(function() {
     $('.delete').click(function () {
         let el = this;
         let elId = this.id;
@@ -14,4 +14,4 @@ window.onload = function () {
             }
         });
     });
-};
+});
