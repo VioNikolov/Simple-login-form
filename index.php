@@ -69,7 +69,7 @@
                         </ul>
 
                         <p>By clicking Sign Up, you agree to <span>User Agreement</span>, <span>Privacy Policy</span>, and <span>Cookie Policy</span></p><br>
-                        <button name="signup" type="submit"><b>Sign Up</b></button>
+                        <button class="button" name="signup" type="submit"><b>Sign Up</b></button>
                     </form>
 
                 </div>
