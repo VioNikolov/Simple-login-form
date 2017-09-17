@@ -19,16 +19,9 @@
             <link href="./css/style.css" rel="stylesheet">
         </head>
         <body>
-            <form method="post" action="">
-                <nav>
-                    <ul>
-                        <li><img src="images/logo.jpg"></li>
-                        <li><input name="email_nav" type="email" placeholder="Email"></li>
-                        <li><input name="pass_nav" type="password" placeholder="Password"></li>
-                        <li><button type="submit" name="signin">Sign in</button> </li>
-                    </ul>
-                </nav>
-            </form>
+            <?php
+                require "navbar.php";
+            ?>
 
             <div class="main">
                 <?php

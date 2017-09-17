@@ -1,13 +1,12 @@
 window.onload = function () {
     $('.delete').click(function () {
         let el = this;
-        let id = this.id;
-        console.log(id);
+        let elId = this.id;
 
         $.ajax({
             url: 'delete.php',
             type: 'POST',
-            data: { id:id },
+            data: { id:elId },
             success: function (response) {
                 $(el).closest('tr').fadeOut(300, function(){
                     $(this).remove();

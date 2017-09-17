@@ -32,7 +32,6 @@ nav ul {
 nav ul li {
     padding-top: 10px;
     display: inline;
-    float: left;
 }
 
 
@@ -64,18 +63,28 @@ nav button {
     cursor: pointer;
     border-radius: 7%;
 }
+nav li {
+    float: right;
+    margin-right: 10px;
+}
 
+nav li:nth-child(2){
+    margin-right: 200px;
+}
 
 nav li:first-child {
-    margin-left: 20%;
-    padding-right: 25%;
+    float: left;
+    margin-left: 200px;
 }
 
 nav img {
     width: 116px;
-
 }
 
+nav a {
+    text-decoration: none;
+    color: #414141;
+}
 
 h2 {
     text-align: center;
@@ -128,13 +137,16 @@ p {
     cursor: pointer;
 }
 
-/*For profile page*/
-.main-table {
-
+#name {
+    display: inline-block;
+    color: #fff;
+    padding-top: 5px;
+    margin-right: 20px;
 }
 
+/*For profile page*/
 .container-table {
-    width: 800px;
+    width: 900px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
@@ -142,9 +154,9 @@ p {
 }
 
 table {
-    border: 1px solid gray;
+    border: 1px solid #1b1b80;
+    word-wrap: break-word;
     table-layout: fixed;
-    white-space: nowrap;
     width: 100%;
 }
 
@@ -156,22 +168,20 @@ td, th {
 
 thead tr th{
     background-color: #1654a1;
-    color: white;
+    color: #efefef;
 }
 
 tr:nth-child(even) td {
-    background: #F1F1F1;
+    background: rgba(213, 213, 213, 0.5);
 }
 
 
-tr:nth-child(odd) td {
-    background: #FEFEFE;
+tbody tr:hover{
+    background: rgba(55, 185, 255, 0.5) !important ;
+    -webkit-transition: background-color 300ms linear;
+    -ms-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
 }
-
-tbody tr:hover {
-    background-color: #9e4256;
-}
-
 .delete {
     width: 30px;
     height: 30px;

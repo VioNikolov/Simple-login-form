@@ -18,19 +18,9 @@ require 'db.php';
     <script src="js/ajax.js"></script>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><img src="images/logo.jpg"></li>
-            <li style="color: white;"><?php echo $_SESSION['first_name']?></li>
-            <li><button type="button"><a href="logout.php">logout</a> </button></li>
-        </ul>
-    </nav>
+<!--TODO: TO MAKE NAV INCLUDE -->
     <?php
-        if(isset($_SESSION['message'])) {
-            echo $_SESSION['message'];
-            unset($_SESSION['message']);
-        }
-
+        require "navbar.php";
     ?>
     <div class="main-table">
         <div class="container-table">
@@ -58,7 +48,7 @@ require 'db.php';
                                    <td>".$row['email']."</td>
                                    <td><button class='delete' id='".$row['id']."'><i class='fa fa-trash'></i></button></td>
                                </tr>";
-                        }
+                    }
                     ?>
                 </tbody>
             </table>
