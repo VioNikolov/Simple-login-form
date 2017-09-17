@@ -19,7 +19,7 @@ else {
     $stmt = $mysqli->prepare("INSERT INTO users (first_name, last_name, email, password, hash) ".
         "VALUES ('$first_name', '$last_name', '$email', '$password','$hash')");
     if ($stmt->execute()) {
-        $_SESSION['message'] = 'Registration successful!'.'</br>'.' You can now sign in';
+        $_SESSION['message'] = 'Registration successful!';
     }
     else {
         $_SESSION['message'] = 'Registration failed!';

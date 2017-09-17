@@ -196,3 +196,13 @@ i {
 i:not(tr):hover {
     color: rgb(220, 10, 0);
 }
+
+.alert-success {
+    color: green;
+    font-size: 14px;
+}
+
+.alert-warning {
+    color: red;
+    font-size: 14px;
+}
